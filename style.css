@@ -22,12 +22,17 @@ body{
 
 .site-content {
     flex: 1;
+    position: relative;
+    min-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .headersection {
     position: relative;
     height: 60vh;
-    width: 100%;
+    min-width: 100%;
+    max-width: 1200px;
     padding: 10px 10px 10px 10px;
     font-family: 'Montserrat', sans-serif;
     color: #023802;
@@ -35,7 +40,8 @@ body{
     position: relative;
     background-image: url("producebg1.jpg");
     image-rendering: optimizeQuality;
-
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 1px 10px 0 rgba(0,0,0,0.5);
 }
 
 
@@ -43,14 +49,14 @@ h1 {
     position: absolute;
     padding: 0px 0px 0px 20px;
     left: 70px;
-    bottom: 20%;
+    bottom: 40%;
     font-family: 'Quicksand', sans-serif;
     font-style: bold;
-    font-size: 100px;
+    font-size: 80px;
     color: white;
     max-width: 700px;
     min-width: 700px;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     background-color: hsl(120, 63%, 36%);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
@@ -59,49 +65,72 @@ h1 {
 
 h2 {
     position: absolute;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 0px 00px 20px;
     left: 70px;
-    bottom: 60px;
+    bottom: 30px;
     color: white;
     font-size: 20px;
-    max-width: 550px;
-    min-width: 550px;
+    max-width: 530px;
+    min-width: 530px;
     background-color: #ca7a03;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 
 .intro {
-    position: static;
     padding-top: 30px;
     font-size: 20pt;
     font-style: bolder;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
-    margin-left: 10%;
+    max-width: 80%;
+    min-width: 60%;
+    margin: 0 10% auto;
+    /* width: 80%; */
+    /* margin-left: 10%;
     margin-right: 10%;
     max-width: 1200px;
-    min-width: 1200px;
+    min-width: 700px; */
 }
 
 .bodytext {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
-    width: 80%;
+    margin-top: -1px;
+    font-size: 18pt;
+    max-width: 80%;
+    min-width: 60%;
+    margin: 0 10% auto;
+    /* width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     max-width: 1200px;
-    min-width: 1200px;
+    min-width: 700px; */
+}
+
+.cta {
+    font-size: 35px;
+    font-style: bolder;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 80%;
+    min-width: 60%;
+    margin: 0 10% auto;
+    position: relative;
+    top: 10px;
 }
 
 .flex-grid {
+
     display: flex;
     align-items: center;
-    width: 70%;
-    max-width: 1000px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0px 10% auto;
+    position: relative;
+    bottom: 2%;
+    max-width: 80%;
+    min-width: 60%;
+    
+
 }
 
 .buttons {
@@ -113,8 +142,8 @@ h2 {
     padding: 1% 1% 1% 1%;
     border: 12px solid green;
     font-weight: bolder;
-    background: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: palegreen;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 20px 0 rgba(0,0,0,0.25);
 }
 
 /* .buttons:hover {
@@ -162,6 +191,6 @@ footer {
     text-align: center;
     color: #044e1a;
     border: 10px 1px 1px 1px solid hsl(145, 98%, 18%);
-    margin: auto auto 0 auto;
+    margin: 50px auto 0 auto;
     width: 100%;
 }
